@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Esport Community Indonesia (CCID)</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    transition:0.3s;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:#0d1117;
+    box-shadow:0 0 20px #00aaff;
+}
+
+header h1{
+    color:#00aaff;
+    text-shadow:0 0 15px #00aaff;
+}
+
+/* TOGGLE BUTTON */
+.mode-switch{
+    text-align:center;
+    margin:20px;
+}
+
+.mode-switch button{
+    margin:5px;
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    background:#00aaff;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* GRID CONTAINER */
+.members{
+    display:grid;
+    gap:20px;
+    justify-content:center;
+}
+
+/* DEFAULT (AUTO RESPONSIVE) */
+.members{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    padding:20px;
+}
+
+/* MOBILE MODE */
+.mobile .members{
+    grid-template-columns:1fr;
+}
+
+/* DESKTOP MODE */
+.desktop .members{
+    grid-template-columns:repeat(2,1fr);
+}
+
+/* PC PRO MODE */
+.pc .members{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.card{
+    background:#161b22;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.ketua{
+    border:2px solid white;
+    box-shadow:0 0 15px white;
+}
+
+.anggota{
+    border:2px solid #00aaff;
+    box-shadow:0 0 15px #00aaff;
+}
+
+.ccid-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+    padding:2px 6px;
+    border-radius:12px;
+    background:rgba(0,170,255,0.15);
+    border:1px solid #00aaff;
+    font-size:12px;
+    font-weight:bold;
+    color:#00aaff;
+}
+
+.logo{
+    width:14px;
+    height:14px;
+}
+
+.nickname{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:8px;
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+button{
+    margin-top:10px;
+    padding:8px 12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#00aaff;
+    color:white;
+    font-weight:bold;
+}
+
+.coming{
+    text-align:center;
+    font-size:22px;
+    color:#00aaff;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0d1117;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>CYBER ESPORT COMMUNITY INDONESIA (CCID)</h1>
+<p>Squad Mobile Legends Profesional</p>
+</header>
+
+<div class="mode-switch">
+<button onclick="setMode('mobile')">📱 Mobile</button>
+<button onclick="setMode('desktop')">💻 Desktop</button>
+<button onclick="setMode('pc')">🖥 PC Pro</button>
+<button onclick="setMode('')">♻ Auto</button>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+<symbol id="ccidEagle" viewBox="0 0 512 512">
+<path fill="#00aaff" d="M256 40L200 140L80 160L170 240L140 360L256 300L372 360L342 240L432 160L312 140Z"/>
+<circle cx="256" cy="220" r="30" fill="white"/>
+</symbol>
+</svg>
+
+<section>
+<h2 style="text-align:center;">👑 Ketua Squad</h2>
+<div class="members">
+
+<div class="card ketua">
+<div class="nickname">
+<span class="ccid-badge">
+<svg class="logo"><use href="#ccidEagle"/></svg> CCID
+</span>
+SunNaru (GoGoSonic)
+</div>
+<p>ID Server : 641727264 (8552)</p>
+<button onclick="window.open('https://wa.me/6283870743757')">Kirim Pesan</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center;">🔥 Anggota Squad</h2>
+
+<div class="members">
+
+<div class="card anggota">
+<div class="nickname"><span class="ccid-badge"><svg class="logo"><use href="#ccidEagle"/></svg> CCID</span>24434</div>
+<p>ID : 1317571844 (15387)</p>
+<p>Role : Mid Laner</p>
+<button onclick="window.open('https://wa.me/6283144192351')">Kirim Pesan</button>
+</div>
+
+<div class="card anggota">
+<div class="nickname"><span class="ccid-badge"><svg class="logo"><use href="#ccidEagle"/></svg> CCID</span>mirai.</div>
+<p>ID : 1181694563 (13802)</p>
+<p>Role : Roam Sejati</p>
+<button onclick="window.open('https://wa.me/6285173399273')">Kirim Pesan</button>
+</div>
+
+<div class="card anggota">
+<div class="nickname"><span class="ccid-badge"><svg class="logo"><use href="#ccidEagle"/></svg> CCID</span>dinzsyifa</div>
+<p>ID : 596664773 (8395)</p>
+<p>Role : EXP & Gold</p>
+<button onclick="window.open('https://wa.me/6285771637130')">Kirim Pesan</button>
+</div>
+
+<div class="card anggota">
+<div class="nickname"><span class="ccid-badge"><svg class="logo"><use href="#ccidEagle"/></svg> CCID</span>k for za.</div>
+<p>ID : 1237725539 (13993)</p>
+<p>Role : EXPLaner</p>
+<button onclick="window.open('https://wa.me/6283187016182')">Kirim Pesan</button>
+</div>
+
+<div class="card anggota">
+<div class="nickname"><span class="ccid-badge"><svg class="logo"><use href="#ccidEagle"/></svg> CCID</span>letmithink.</div>
+<p>ID : 675678583 (8700)</p>
+<p>Role : Jungle</p>
+<button onclick="window.open('https://wa.me/6283129781005')">Kirim Pesan</button>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 style="text-align:center;">🔒 Room Private</h2>
+<p class="coming">COMING SOON</p>
+</section>
+
+<footer>
+<p>© 2026 Cyber Esport Community Indonesia (CCID)</p>
+</footer>
+
+<script>
+function setMode(mode){
+    document.body.className = mode;
+}
+</script>
+
+</body>
+</html>
